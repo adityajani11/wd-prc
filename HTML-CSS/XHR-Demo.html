@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>XHR Demo</title>
+        <style>
+            .center {
+                display: flex;
+                justify-content: center;
+            }
+            #getData {
+                font-size: larger;
+                margin-top: 5vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="center">
+            <button id="getData" onclick="clicked()">Load File</button>
+        </div>
+        <script>
+            function clicked() {
+                const xhr = new XMLHttpRequest();
+
+                // Open - type, url/file, async
+                xhr.open('GET', 'xhr-sample.txt', true);
+
+                // onload for setting the response text
+                xhr.onload = function () {
+                    if(this.status === 200) {
+                        // Output text will be visible in 'Network' in dev tools
+                        // console.log(this.responseText);
+                    }
+                }
+
+                // Sends request
+                xhr.send();
+
+            }
+        </script>
+    </body>
+</html>
