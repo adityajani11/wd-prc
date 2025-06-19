@@ -1,0 +1,19 @@
+<html>
+
+<body>
+  <h1>'fetch' API demo</h1>
+  <script>
+    fetch('https://dummyjson.com/products', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      // Also, 'body' can be specified here
+    })
+      .then(res => res.json())
+      .then(json => console.log(json))
+      .catch(error => console.log("Error Occurred : " + error))
+  </script>
+</body>
+
+</html>
