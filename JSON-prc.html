@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JSON Demo - Responsive Bootstrap Table</title>
+    <title>JSON Demo</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -67,7 +67,7 @@
           const thead = document.createElement("thead");
           thead.innerHTML = `
                     <tr class="table-primary">
-                        <th scope="col">Sr. No.</th>
+                        <th scope="col">Photo</th>
                         <th scope="col">First Name</th>
                         <th scope="col">Last Name</th>
                         <th scope="col">Email</th>
@@ -79,7 +79,7 @@
           data.results.forEach((user, index) => {
             const row = document.createElement("tr");
             row.innerHTML = `
-                        <th scope="row">${index + 1}</th>
+                        <td><img src="${user.picture.thumbnail}"></td>
                         <td>${user.name.first}</td>
                         <td>${user.name.last}</td>
                         <td>${user.email}</td>
