@@ -1,0 +1,24 @@
+{
+  "name": "web_development",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/adityajani11/wd-prc",
+  "bugs": {
+    "url": "https://github.com/adityajani11/wd-prc/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityajani11/wd-prc.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "JSON-prc.html",
+  "scripts": {
+    "deploy": "gh-pages -d .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
